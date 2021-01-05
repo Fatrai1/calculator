@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <title>Calculator</title>
+    
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator-display"></div>
+
+        <div class="calcButtons">
+            <div class="calculator__row">
+                <div class="calc__cell"><button data-number type="button" class="btn-operation" value="+">+</button></div>
+                <div class="calc__cell"><button data-number type="button" class="btn-operation" value="-">-</button></div>
+                <div class="calc__cell"><button data-number type="button" class="btn-operation" value="*">*</button></div>
+                <div class="calc__cell"><button data-number type="button" class="btn-operation" value="/">/</button></div>
+            </div>
+            <div data-operand class="calculator__panels">
+
+                <div class="calculator__left">
+                    <div class="calculator__row">
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="7">7</button></div>
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="8">8</button></div>
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="9">9</button></div>
+                    </div>
+                    <div class="calculator__row">
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="4">4</button></div>
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="5">5</button></div>
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="6">6</button></div>
+                    </div>
+                    <div class="calculator__row">
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="1">1</button></div>
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="2">2</button></div>
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="3">3</button></div>
+                    </div>
+                    <div class="calculator__row">
+                        <div class="calc__cell"><button data-number type="button" class="btn" value="0">0</button></div>
+                        <div class="calc__cell"><button data-number type="button" class="btn" value=".">.</button></div>
+                        <div class="calc__cell"><button data-delete type="button" class="btn" value="C">C</button></div>
+                    </div>
+                </div>
+
+                <aside class="calculator__right">
+                    <div class="calculator__sumBtn"><button data-equal type="button" class="equalBtn">=</button></div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/calculator.js"></script>
+</body>
+
+</html>

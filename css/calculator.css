@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image: linear-gradient(to bottom right, rgb(43, 42, 42), rgb(61, 61, 90), rgb(33, 34, 33));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    background-color: rgb(197, 197, 197);
+    border: outset;
+    width: fit-content;
+
+}
+
+.calculator-display{
+    /* position: fixed; */
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    width: 19rem;
+    height: 5rem;
+    border: 1px solid rgb(221,221,221);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-size: 2rem;
+    
+}
+
+
+.calculator, .calcButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__row, .calculator__panels {
+    display: flex;
+    flex-direction: row;
+}
+
+.calc__cell, .calculator__sumBtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    vertical-align: auto;
+    border: 1px solid #ddd;
+    height: 3rem;
+    width: 5rem;
+    text-decoration: none;
+    border: none;
+    border-collapse: collapse;
+}
+
+.calculator__sumBtn {
+    height: 12rem;
+}
+
+.btn, .btn-operation, .equalBtn {
+    margin: .3rem;
+    width: 5rem;
+}
+.btn, .btn-operation {
+    background-color: rgb(249,249,249);
+    border: 1px outset rgb(241,241,241);
+    transition: background-color 0.5s;
+}
+
+.btn:focus, .sumBtn:focus {
+    outline: none;
+}
+
+.btn:active, .sumBtn:active {
+    border: inset;
+}
+.btn:hover {
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+.equalBtn:hover {
+    background-color: rgb(39, 116, 248);
+}
+
+
+.btn--commands {
+    background-color: rgb(221,221,221);
+}
+
+.equalBtn {
+    background-color: rgb(77,143,253);
+    color:  rgb(249,249,249);
+    border: 1px outset rgb(45, 106, 211);
+    transition: background-color 0.5s;
+}
